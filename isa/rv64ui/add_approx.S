@@ -54,8 +54,11 @@ RVTEST_CODE_BEGIN
 
   # Mostafa's test cases:
   TEST_RR_OP( 2,  add, 0x0002223a, 0x0001d3e7, 0x00004e53 );
-  TEST_APPR_RR_OP( 3,  add.approx, 0x0000004a, 0x0000004a, 0x00000034, 0x00000012, 0x0000003f);
-  TEST_APPR_RR_OP( 4,  add.approx, 0x00000836, 0x00000836, 0x00000775, 0x000000c9, 0x0000003e);
+  TEST_APPR_RR_OP( 3,  add.approx, 0x00000000, 0xffffffff, 0x00000000, 0x0000ffff, 0x0000003f);
+  TEST_APPR_RR_OP( 4,  add.approx, 0x00000000, 0xffffffff, 0x0000ffff, 0x00000000, 0x0000003e);
+  TEST_APPR_RR_OP( 5,  add.approx, 0x00000000, 0xffffffff, 0x00001234, 0x00004321, 0x0000003e);
+  TEST_APPR_RR_OP( 6,  add.approx, 0x00000000, 0xffffffff, 0x0000f0f0, 0x00000f0f, 0x0000003c);
+  TEST_APPR_RR_OP( 7,  mul.approx, 0x00000000, 0xffffffff, 0x00000001, 0x0000ffff, 0x0000003c);
 
   #TEST_RR_OP( 5,  add, 0xffffffffffff8000, 0x0000000000000000, 0xffffffffffff8000 );
   #TEST_RR_OP( 6,  add, 0xffffffff80000000, 0xffffffff80000000, 0x00000000 );
