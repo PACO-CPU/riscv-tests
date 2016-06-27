@@ -147,6 +147,9 @@ test_ ## testnum: \
 # Tests for an instruction with register-register operands
 #-----------------------------------------------------------------------
 
+
+
+
 #define TEST_RR_OP( testnum, inst, result, val1, val2 ) \
     TEST_CASE( testnum, x3, result, \
       li  x1, val1; \
