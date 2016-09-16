@@ -1,7 +1,7 @@
 # See LICENSE for license details.
 
 #*****************************************************************************
-# addax.S , derived from add.S
+# add_approx.S , derived from add.S
 #-----------------------------------------------------------------------------
 #
 # Test approximate add instruction.
