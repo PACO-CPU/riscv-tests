@@ -7,5 +7,3 @@
 *.hex
 .*.swp
 autom4te.cache
-# (fake) submodules
-env
